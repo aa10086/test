@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #212121;
+}
+body{
+    width:1280px;
+    margin: 0 auto;
+    height:auto;
+    font-family:'微软雅黑';
+    background: #fff;
+}
+@font-face {
+    font-family: 'icon';
+    src: url('fonts/fonts/icomoon.eot?') format('eot'),
+        url('fonts/fonts/icomoon.svg') format('svg'),
+        url('fonts/fonts/icomoon.ttf') format('truetype'),
+        url('fonts/fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    width:100%;
+    height:58px;
+    background: #fff;
+    min-width:1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header:hover{
+    -webkit-filter: drop-shadow(0 0 10px #999);
+    filter: drop-shadow(0 0 10px #999);
+}
+a{
+    text-decoration: none;
+    font-family:'微软雅黑',sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+}
+header>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:58px;
+    width:140px;
+    margin-left: 60px;
+    font-family: '黑体';
+    font-size: 21px;
+}
+header>a:before{
+    content: '\e920';
+    font-family:'icon';
+    color: #e7504d;
+    font-size:42px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:58px;
+    margin-right:100px;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:58px;
+}
+header ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:58px;
+    width:80px;
+    margin-right:20px;
+    box-sizing: border-box;
+}
+header ul li a:hover{
+    border-bottom: 5px solid #e7504d;
+    color: #e7504d;
+}
+header #logIn{
+    width: 100px;
+    color: #e7504d;
+}
+#logIn:hover{
+    border: none;
+}
+.active{
+    border-bottom: 5px solid #e7504d;
+    color: #e7504d;
+}
+#logIn:before{
+    content: '\e971';
+    font:16px 'icon';
+}
+#content{
+    width:100%;
+    min-width:1280px;
+    height:auto;
+    margin: 0 auto;
+}
+#content #banner{
+    width: 100%;
+    min-width:1280px;
+    height:693px;
+    background: #fff url(photos/about.png) center no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+}
+#banner .bannerH{
+    width:50%;
+    min-height:200px;
+    margin-left:180px;
+    -webkit-filter: drop-shadow(0 0 10px #999);
+    filter: drop-shadow(0 0 10px #999);
+}
+.bannerH h1{
+    font-size: 60px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.bannerH p{
+    font-size: 21px;
+    color: #ffffff;
+}
+.bannerH a{
+    display: block;
+    text-align: center;
+    font-size:30px;
+    line-height:66px;
+    color: #ffffff;
+    background: #e74f4d;
+    width:330px;
+    height:66px;
+    margin:20px 0 0;
+}
+.bannerH a:hover{
+    filter: drop-shadow(0 0 10px #999);
+    border: 1px solid #cecece;
+}
+.icon{
+    width:100%;
+    min-height:254px;
+    display: flex;
+    background: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-filter: drop-shadow(0 0 5px #666);
+    filter: drop-shadow(0 0 5px #666);
+}
+.icon .box{
+    height:200px;
+    padding:50px;
+    text-align: center;
+    background: #fff url(photos/bder.png) center right no-repeat;
+}
+.box:hover{
+    align-self: flex-start;
+}
+.box span{
+    display: block;
+    width:42px;
+    height:42px;
+    margin: -20px auto 10px;
+}
+.box:nth-child(1) span{
+    background: #fff url(photos/icon.png) 0 0 no-repeat;
+}
+.box:nth-child(2) span{
+    background: #fff url(photos/icon.png) -42px -1px no-repeat;
+}
+.box:nth-child(3) span{
+    background: #fff url(photos/icon.png) -82px 0px no-repeat;
+}
+.box:nth-child(4) span{
+    background: #fff url(photos/icon.png) -124px 0px no-repeat;
+}
+.box:nth-child(4){
+    background: none;
+}
+#about{
+    width:100%;
+    background: #edecec;
+}
+#about .title{
+    width:100%;
+    padding:80px;
+    min-width:360px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#about #search{
+    width:100%;
+    min-height: 341px;
+    background: #fff url(photos/banner.png) center no-repeat;
+
+}
+#search .banner{
+    width: 100%;
+    height:341px;
+    background-color: rgba(255, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#search form{
+    margin-top:10px;
+}
+#search select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width:236px;
+    height:36px;
+    line-height:36px;
+    border:none;
+    background: #fff url(photos/slect.png) 210px 9px no-repeat;
+    margin-right:20px;
+}
+select:focus{
+    border: 1px solid #e74f4d;
+}
+select option{
+    display: block;
+    width:100%;
+    height: 36px;
+    text-indent: 36px;
+    line-height:36px;
+    vertical-align: baseline;
+}
+select option:hover{
+    background: #e74f4d url(photos/slect.png) 9px 9px no-repeat;
+}
+#search input{
+    display: inline-block;
+    width:236px;
+    height:36px;
+    line-height:36px;
+    border:none;
+    background-color: #e74f4d;
+}
+.title h2{
+    font-size: 54px;
+    color: #aaa;
+    font-weight:normal;
+}
+.title h2:nth-child(1):before{
+    content: '\e920';
+    font-family:'icon';
+    color: #e7504d;
+    font-size: 64px;
+}
+#about .event{
+    width:100%;
+    min-height: 500px;
+    background: #f8f8f7;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 1px solid #000;
+}
+.event .logs{
+    min-height:400px;
+    text-align: center;
+    padding:4px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.event .logs div{
+    width: 202px;
+    height: 311px;
+}
+.event .logs:nth-child(1) div{
+    background: #fff url(photos/box.png) 0 0 no-repeat;
+}
+.event .logs:nth-child(2) div{
+     background: #fff url(photos/box.png) -255px -53px no-repeat;
+ }
+.event .logs:nth-child(3) div{
+    background: #fff url(photos/box.png) -512px -1px no-repeat;
+}
+.event .logs:nth-child(4) div{
+    background: #fff url(photos/box.png) -767px 0 no-repeat;
+}
+.logs:hover{
+    box-shadow: 0 0 10px #555;
+    align-self: flex-start;
+}
+.logs h2{
+    font-weight: normal;
+    font-size: ;
+}
+
+
+
+
